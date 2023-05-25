@@ -38,3 +38,13 @@ spring.cloud.refresh.refreshable: false
 
 # Logging
 logging.level.org.springframework: INFO
+
+
+spring:
+  config:
+    activate:
+      on-profile: mysql
+  datasource:
+    url: jdbc:mysql://localhost:3306/petclinic?useSSL=false
+    username: root
+    password: petclinic
